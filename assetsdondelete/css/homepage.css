@@ -1,0 +1,104 @@
+body{
+    /* background-color: red;
+    justify-content: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: grey;
+   
+   
+}
+main{
+    background-color: snow;
+    border: 30px solid white;
+    border-radius: 20px;
+    width: 65%;
+    height:40%;
+    display: flex;
+    margin: 100px;
+    gap: 30px;
+}
+h1{
+    text-align: center;
+    font-size: 55px;
+}
+    
+   
+.letter{
+    /* border: 1px solid black; */
+    width: 1000%;
+    color:hsl(234, 29%, 20%);
+    background-color: white;
+    padding: 5px;
+    margin:30px;
+    margin-left: 30px;
+    display:block;
+}
+aside{
+    float:right;
+    /* margin-top: 40px; */
+}
+
+.clarification{
+    font-size: 16px;
+}
+
+article{
+    /* border: 1px solid darkblue; */
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-size: 18px;
+    padding:0;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    gap: 10px; /* Adds space between the elements */
+}
+#email {
+    width: 100%;
+    height: 50px; /* Makes the input field take the full width of its container */
+    padding: 8px; /* Adds padding inside the input field */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+#btn {
+    display: flex;
+    width: 100%;
+     /* Ensures the button is displayed as a block element */
+}
+
+#button {
+    width:100%;
+    height: 50px;
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: hsl(234, 29%, 20%); /* Sets a background color */
+    color: white; /* Sets the text color */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 16px; /* Sets the font size */
+}
+#button:hover {
+    background-color: hsl(4, 100%, 67%); /* Changes the background color on hover */
+}
+/* footer{
+    /* border: 1px solid violet; */
+   /* margin-right: 30px;
+   display: block; */
+   /* width: 200px; */
+/* } */
+/* #btn{
+    background-color: blue;
+   border:1px solid green;
+   margin: 20px; */
+   /* width: 25rem; */
+   /* height: 30px; */
+/* } */
+   
+
+
+   
+
+    
