@@ -1,0 +1,31 @@
+body{
+    background-color: hsl(234, 29%, 20%);
+}
+main{
+    border: 1px solid black;
+    width: 20rem;
+    margin: 10rem 40rem 5rem 35rem;
+    padding:50px;
+    background-color: snow;
+    border-radius: 20px;
+    color:hsl(234, 29%, 20%);
+}
+h1{
+    font-size: 35px;
+}
+button{
+    width:20rem;
+    height:3rem;
+    background-color:hsl(234, 29%, 20%);
+    color:snow;
+    border: none;
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 16px;
+}
+button:hover {
+    background-color: hsl(4, 100%, 67%); /* Changes the background color on hover */
+    border: none;
+}
+
+

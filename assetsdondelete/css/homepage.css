@@ -12,11 +12,13 @@ main{
     background-color: snow;
     border: 30px solid white;
     border-radius: 20px;
+    justify-content: space-between;
     width: 65%;
     height:40%;
     display: flex;
     margin: 100px;
     gap: 30px;
+    flex-direction: row-reverse;
 }
 h1{
     text-align: center;
@@ -33,11 +35,19 @@ h1{
     margin:30px;
     margin-left: 30px;
     display:block;
+    text-align: left;
+    flex: 1;
+    padding-right: 20px;
 }
-aside{
-    float:right;
-    /* margin-top: 40px; */
+aside {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Aligns the SVG to the right */
+    align-items: center;
+    padding-left: 20px;
 }
+
+
 
 .clarification{
     font-size: 16px;
@@ -83,19 +93,108 @@ article{
 #button:hover {
     background-color: hsl(4, 100%, 67%); /* Changes the background color on hover */
 }
-/* footer{
-    /* border: 1px solid violet; */
-   /* margin-right: 30px;
-   display: block; */
-   /* width: 200px; */
-/* } */
-/* #btn{
-    background-color: blue;
-   border:1px solid green;
-   margin: 20px; */
-   /* width: 25rem; */
-   /* height: 30px; */
-/* } */
+/* Add this to your existing CSS or as a new CSS file */
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    aside svg {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .letter {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .clarification {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    section article {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    section article svg {
+        margin-right: 10px;
+    }
+
+    section article p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    footer h4 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    #email {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    #btn button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    #btn button:hover {
+        background-color: #555;
+    }
+}
+
+
    
 
 
