@@ -4,7 +4,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
-    background-color: grey;
+    background-color: hsl(234, 29%, 20%);
    
    
 }
@@ -96,7 +96,7 @@ article{
 /* Add this to your existing CSS or as a new CSS file */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     body {
         margin: 0;
         padding: 20px;
@@ -193,6 +193,10 @@ article{
         background-color: #555;
     }
 }
+
+
+    
+
 
 
    
